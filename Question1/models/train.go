@@ -40,13 +40,30 @@ var MockTrains = []Train{
 		Coaches: []Coach{
 			{
 				Type:             "sleeper",
-				SeatAvailability: 80,
-				Price:            600.0,
+				SeatAvailability: 100,
+				Price:            1000.0,
 			},
 			{
 				Type:             "ac",
 				SeatAvailability: 30,
-				Price:            1200.0,
+				Price:            1500.0,
+			},
+		},
+	},
+	{
+		ID:        3,
+		Name:      "Express 3",
+		Departure: time.Now().Add(time.Hour * 10),
+		Coaches: []Coach{
+			{
+				Type:             "sleeper",
+				SeatAvailability: 60,
+				Price:            500.0,
+			},
+			{
+				Type:             "ac",
+				SeatAvailability: 20,
+				Price:            1000.0,
 			},
 		},
 	},
